@@ -1,0 +1,29 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f4f6f8;color:#222}
+header{background:#172554;color:#fff;padding:20px 0}
+.contenedor{width:90%;max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:28px}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:bold}
+nav a:hover{text-decoration:underline}
+.hero{min-height:400px;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#2563eb,#172554);color:#fff;padding:40px 20px}
+.hero h2{font-size:45px;margin-bottom:20px}
+.hero p{max-width:650px;font-size:18px;line-height:1.6;margin-bottom:30px}
+.boton{display:inline-block;background:#fff;color:#172554;padding:13px 25px;border-radius:8px;text-decoration:none;font-weight:bold}
+.seccion,.informacion{width:90%;max-width:1100px;margin:50px auto}
+.seccion h2,.informacion h2{text-align:center;margin-bottom:30px;font-size:30px}
+.formulario{background:#fff;padding:25px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1);margin-bottom:30px;display:flex;gap:10px;flex-wrap:wrap}
+.formulario input{flex:1;min-width:200px;padding:12px;border:1px solid #ccc;border-radius:6px}
+.formulario button{background:#2563eb;color:#fff;border:0;padding:12px 20px;border-radius:6px;cursor:pointer}
+.formulario button:hover{background:#1d4ed8}
+table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 3px 10px rgba(0,0,0,.1)}
+th,td{padding:15px;border-bottom:1px solid #ddd;text-align:center}
+th{background:#172554;color:#fff}
+.btn-eliminar{background:#dc2626;color:#fff;border:0;padding:8px 12px;border-radius:5px;cursor:pointer}
+.btn-editar{background:#16a34a;color:#fff;border:0;padding:8px 12px;border-radius:5px;cursor:pointer;margin-right:5px}
+.tarjetas{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.tarjeta{background:#fff;padding:25px;text-align:center;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
+.tarjeta h3{color:#2563eb;margin-bottom:10px}
+.informacion>p{text-align:center;margin-bottom:25px}
+footer{background:#172554;color:#fff;text-align:center;padding:25px;margin-top:50px}
+@media(max-width:800px){.contenedor{flex-direction:column;gap:15px}.hero h2{font-size:35px}.tarjetas{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.tarjetas{grid-template-columns:1fr}table{font-size:13px}}

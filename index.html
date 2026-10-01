@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema CRUD</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+    <div class="contenedor">
+        <h1>Mi Sistema CRUD</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#crud">CRUD</a>
+            <a href="#informacion">Información</a>
+        </nav>
+    </div>
+</header>
+
+<section id="inicio" class="hero">
+    <div>
+        <h2>Gestión de información</h2>
+        <p>Página web desarrollada para demostrar las operaciones CRUD: crear, leer, actualizar y eliminar registros.</p>
+        <a href="#crud" class="boton">Comenzar</a>
+    </div>
+</section>
+
+<section id="crud" class="seccion">
+    <h2>Registro de usuarios</h2>
+    <div class="formulario">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="email" id="correo" placeholder="Correo electrónico">
+        <button onclick="agregarUsuario()">Agregar usuario</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tablaUsuarios"></tbody>
+    </table>
+</section>
+
+<section id="informacion" class="informacion">
+    <h2>Acerca del proyecto</h2>
+    <p>Este proyecto demuestra las operaciones principales de un sistema CRUD.</p>
+    <div class="tarjetas">
+        <div class="tarjeta"><h3>Crear</h3><p>Registrar nuevos usuarios.</p></div>
+        <div class="tarjeta"><h3>Leer</h3><p>Visualizar la información registrada.</p></div>
+        <div class="tarjeta"><h3>Actualizar</h3><p>Modificar datos existentes.</p></div>
+        <div class="tarjeta"><h3>Eliminar</h3><p>Eliminar registros.</p></div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Proyecto CRUD | HTML, CSS y JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
